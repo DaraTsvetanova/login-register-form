@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Login/Register</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="art">
+      <img src="/imgs/undraw_my_code_snippets_lynx.svg" alt="coding">
+      <h2>Code wisely!</h2>
+      <p>Learn all the cool trick and tips in JS.</p>
+    </div>
+    <form action="index.js">
+      <h2>Get Started</h2>
+      <p>Already have an account? <a href="">Log in</a></p>
+      <button class="signup">Sign up with Google</button>
+      <button class="signup">Sign up with Facebook</button>
+      <div class="seperator">
+        <hr>
+        <div>or</div>
+        <hr>
+      </div>
+
+      <div class="input-icon">
+        <label for="emailadress">Email Adress</label>
+        <input type="text" placeholder="Enter your email">
+      </div>
+
+      <div class="input-icon">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" minlength="8" placeholder="at least 8 characters">
+      </div>
+
+      <div class="agreements">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label>I agree to Platform's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></label>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
