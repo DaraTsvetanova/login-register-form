@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  color: black;
+  color: #2f2e41;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
   font-family: 'Roboto', sans-serif;
 }
@@ -40,6 +40,7 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 10px 0;
   display: inline-block;
+  background: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -64,6 +65,8 @@ label[for=emailadress], label[for=password] {
   margin: 20px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  background-color: #c1689f;
+  color: white;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 17px;
@@ -78,10 +81,15 @@ label[for=emailadress], label[for=password] {
   cursor: pointer;
 }
 
+.social-signup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px 0px;
+}
+
 .signup {
-  width: 215px;
-  padding: 12px 20px;
-  margin: 25px 4px;
+  padding: 12px 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -92,11 +100,14 @@ label[for=emailadress], label[for=password] {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+form a {
+  color: #c1689f;
+}
+
 .signup:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   cursor: pointer;
 }
-
 
 .seperator {
   display: flex;
@@ -121,7 +132,7 @@ a {
 form {
   display: block;
   background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  padding: 20px 40px;
   border-end-end-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -139,7 +150,7 @@ form p {
 }
 
 .art {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   padding: 60px 30px;
   border-top-left-radius: 10px;
   border-end-start-radius: 10px;
@@ -182,7 +193,7 @@ button {
 }
 
 @media(max-width: 1100px){
-.signup {
-  margin: 10px 4px;
+.social-signup {
+  grid-template-columns: 1fr;
 }
 }
